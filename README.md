@@ -8,7 +8,7 @@ A healthcare visit management system with three user roles: Patient, Doctor, and
 
 ## Architecture
 Layered architecture (Controller → Service → Repository → Database) organized by feature modules
-(auth, doctors, visits, finance). Business rules are enforced in the service layer.
+(auth, doctors, visits, finance,slots). Business rules are enforced in the service layer.
 
 ## Features
 - **Patient:** register/login, view doctors, book a visit, view own visits
@@ -43,6 +43,25 @@ JWT_SECRET="your-secret-key"
 JWT_EXPIRES_IN="1d"
 PORT=3000
 \`\`\`
+
+## Demo Credentials
+
+After running:
+
+```bash
+npx prisma db seed
+```
+
+You can use the following accounts:
+
+| Role | Email | Password |
+|------|-------|----------|
+| Doctor | doctor@test.com | `123456Aa!@#` |
+| Finance | finance@test.com | `123456Aa!@#` |
+| Patient | patient1@test.com | `123456Aa!@#` |
+| Patient | patient2@test.com | `123456Aa!@#` |
+| Patient | patient3@test.com | `123456Aa!@#` |
+
 
 ## API Overview
 
