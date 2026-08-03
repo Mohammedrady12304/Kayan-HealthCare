@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* الألوان */
+  --color-ink: #16232c;
+  --color-canvas: #f4f7f7;
+  --color-surface: #ffffff;
+
+  --color-teal: #0f6e5d;
+  --color-teal-light: #e6f2ef;
+
+  --color-amber: #e3a83b;
+  --color-amber-light: #fbf1de;
+
+  --color-slate: #4c6b8a;
+  --color-slate-light: #e9eef3;
+
+  --color-coral: #c4514b;
+  --color-coral-light: #fbebea;
+
+  /* الخطوط */
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Public Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+}
